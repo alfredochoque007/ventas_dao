@@ -15,7 +15,7 @@
             <jsp:include page="componentes/menu.jsp">
                 <jsp:param name="opcion" value="clientes"/>
             </jsp:include>
-            <a href="/" class="btn btn-primary btn-sm mt-3"><i class="fa-solid fa-plus"></i> Nuevo Cliente</a>
+            <a href="ClienteControlador?action=add" class="btn btn-primary btn-sm mt-3"><i class="fa-solid fa-plus"></i> Nuevo Cliente</a>
 
             <table class="table table-striped mt-3">
                 <tr>

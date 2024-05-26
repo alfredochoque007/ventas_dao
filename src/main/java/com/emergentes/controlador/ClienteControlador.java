@@ -24,6 +24,24 @@ public class ClienteControlador extends HttpServlet {
             String action = (request.getParameter("action") != null) ? request.getParameter("action") : "view";
 
             switch (action) {
+                case "add":
+                    request.setAttribute("cliente", cli);
+                    request.getRequestDispatcher("frmCliente.jsp").forward(request, response);
+                    break;
+
+                case "edit":
+                    id = Integer.parseInt(request.getParameter("id"));
+                    cli = dao.getById(id);
+                    request.setAttribute("cliente", cli);
+                    request.getRequestDispatcher("frmCliente.jsp").forward(request, response);
+                    break;
+
+                case "delete":
+                    id = Integer.parseInt(request.getParameter("id"));
+                    dao.delete(id);
+                    response.sendRedirect("ClienteControlador");
+                    break;
+
                 case "view":
                     //obtener la lista de registros(objetos)
                     List<Cliente> lista = dao.getAll();
@@ -40,7 +58,35 @@ public class ClienteControlador extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-   
+        int id = Integer.parseInt(request.getParameter("id"));
+        String nombre = request.getParameter("nombre");
+        String correo = request.getParameter("correo");
+        String celular = request.getParameter("celular");
+
+        Cliente cli = new Cliente();
+        cli.setId(id);
+        cli.setNombre(nombre);
+        cli.setCorreo(correo);
+        cli.setCelular(celular);
+        System.out.println("HOLA");
+        ClienteDAO dao = new ClienteDAOimpl();
+        if (id == 0) {
+            try {
+                //nuevo registro
+
+                dao.insert(cli);
+            } catch (Exception ex) {
+                System.out.println("Error al Insertar." + ex.getMessage());
+            }
+        } else {
+            try {
+                //edicion de registro
+                dao.update(cli);
+            } catch (Exception ex) {
+                System.out.println("Error al EDITAR." + ex.getMessage());
+            }
+        }
+        response.sendRedirect("ClienteControlador");
     }
 
 }
