@@ -10,7 +10,6 @@ import com.emergentes.modelo.Cliente;
 import com.emergentes.modelo.Producto;
 import com.emergentes.modelo.Venta;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
