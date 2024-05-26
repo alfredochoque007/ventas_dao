@@ -12,18 +12,9 @@
     <body>
         <div class="container">
             <h1>Punto de ventas</h1>
-
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Clientes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Ventas</a>
-                </li>
-            </ul>
+            <jsp:include page="componentes/menu.jsp">
+                <jsp:param name="opcion" value="productos"/>
+            </jsp:include>
             <a href="/" class="btn btn-primary btn-sm"><i class="fa-solid fa-plus"></i> Nuevo Producto</a>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
