@@ -11,7 +11,7 @@
     </head>
     <body>
         <div class="container">
-            <h1>Punto de ventas</h1>
+            <h1>Productos</h1>
             <jsp:include page="componentes/menu.jsp">
                 <jsp:param name="opcion" value="productos"/>
             </jsp:include>
@@ -28,9 +28,9 @@
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>asd</td>
-                    <td>asd</td>
-                    <td>asd</td>
+                    <td>Celular</td>
+                    <td>....</td>
+                    <td>1000</td>
                     <td><a href="#"><i class="fa-solid fa-pen-to-square"></i></a></td>
                     <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
                 </tr>

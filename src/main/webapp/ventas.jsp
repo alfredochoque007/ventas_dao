@@ -13,24 +13,24 @@
         <div class="container">
             <h1>Punto de ventas</h1>
             <jsp:include page="componentes/menu.jsp">
-                <jsp:param name="opcion" value="productos"/>
+                <jsp:param name="opcion" value="ventas"/>
             </jsp:include>
             <a href="/" class="btn btn-primary btn-sm mt-3"><i class="fa-solid fa-plus"></i> Nuevo Producto</a>
 
             <table class="table table-striped mt-3">
                 <tr>
                     <th>Id</th>
-                    <th>Nombre</th>
-                    <th>Descripcion</th>
-                    <th>Precio</th>
+                    <th>Nombre del cliente</th>
+                    <th>Producto</th>
+                    <th>Fecha</th>
                     <th></th>
                     <th></th>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>asd</td>
-                    <td>asd</td>
-                    <td>asd</td>
+                    <td>Luis Choque</td>
+                    <td>Celular</td>
+                    <td>15-12-2024</td>
                     <td><a href="#"><i class="fa-solid fa-pen-to-square"></i></a></td>
                     <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
                 </tr>

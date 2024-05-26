@@ -11,26 +11,28 @@
     </head>
     <body>
         <div class="container">
-            <h1>Punto de ventas</h1>
+            <h1>Clientes</h1>
             <jsp:include page="componentes/menu.jsp">
-                <jsp:param name="opcion" value="productos"/>
+                <jsp:param name="opcion" value="clientes"/>
             </jsp:include>
-            <a href="/" class="btn btn-primary btn-sm mt-3"><i class="fa-solid fa-plus"></i> Nuevo Producto</a>
+            <a href="/" class="btn btn-primary btn-sm mt-3"><i class="fa-solid fa-plus"></i> Nuevo Cliente</a>
 
             <table class="table table-striped mt-3">
                 <tr>
                     <th>Id</th>
                     <th>Nombre</th>
-                    <th>Descripcion</th>
-                    <th>Precio</th>
+                    <th>Correo</th>
+                    <th>Celular</th>
                     <th></th>
                     <th></th>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>asd</td>
-                    <td>asd</td>
-                    <td>asd</td>
+                    <td>Luis Choque</td>
+                    <td>luis@gmail.com</td>
+                    <td>758554</td>
+                    <td></td>
+                    <td></td>
                     <td><a href="#"><i class="fa-solid fa-pen-to-square"></i></a></td>
                     <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
                 </tr>

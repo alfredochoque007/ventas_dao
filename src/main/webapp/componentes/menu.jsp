@@ -5,12 +5,12 @@
 
 <ul class="nav nav-tabs">
     <li class="nav-item">
-        <a class="nav-link <%=(opcion.equals("productos") ? "active" : "")%>" href="#">Productos</a>
+        <a class="nav-link <%=(opcion.equals("productos") ? "active" : "")%>" href="productos.jsp">Productos</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link <%=(opcion.equals("clientes") ? "active" : "")%>" href="#">Clientes</a>
+        <a class="nav-link <%=(opcion.equals("clientes") ? "active" : "")%>" href="clientes.jsp">Clientes</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link <%=(opcion.equals("ventas") ? "active" : "")%>" href="#">Ventas</a>
+        <a class="nav-link <%=(opcion.equals("ventas") ? "active" : "")%>" href="ventas.jsp">Ventas</a>
     </li>
 </ul>
