@@ -4,6 +4,10 @@
         <servlet-name>ClienteControlador</servlet-name>
         <servlet-class>com.emergentes.controlador.ClienteControlador</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ProductoControlador</servlet-name>
+        <servlet-class>com.emergentes.controlador.ProductoControlador</servlet-class>
+    </servlet>
     <session-config>
         <session-timeout>
             30
