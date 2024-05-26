@@ -12,9 +12,16 @@
         <servlet-name>VentaControlador</servlet-name>
         <servlet-class>com.emergentes.controlador.VentaControlador</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LoginControlador</servlet-name>
+        <servlet-class>com.emergentes.controlador.LoginControlador</servlet-class>
+    </servlet>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+    <welcome-file-list>
+        <welcome-file>LoginControlador</welcome-file>
+    </welcome-file-list>
 </web-app>

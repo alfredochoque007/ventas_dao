@@ -13,4 +13,7 @@
     <li class="nav-item">
         <a class="nav-link <%=(opcion.equals("ventas") ? "active" : "")%>" href="VentaControlador">Ventas</a>
     </li>
+    <li class="nav-item">
+        <a href="LoginControlador?action=logout" class="btn btn-outline-success">Cerrar sesion</a>
+    </li>
 </ul>
