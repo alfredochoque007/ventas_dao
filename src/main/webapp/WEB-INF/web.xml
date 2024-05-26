@@ -8,6 +8,10 @@
         <servlet-name>ProductoControlador</servlet-name>
         <servlet-class>com.emergentes.controlador.ProductoControlador</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>VentaControlador</servlet-name>
+        <servlet-class>com.emergentes.controlador.VentaControlador</servlet-class>
+    </servlet>
     <session-config>
         <session-timeout>
             30
