@@ -15,13 +15,14 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
+        <jsp:include page="componentes/menu.jsp">
+            <jsp:param name="opcion" value="productos"/>
+        </jsp:include>
         <div class="container">
-            <h1>Productos</h1>
-            <jsp:include page="componentes/menu.jsp">
-                <jsp:param name="opcion" value="productos"/>
-            </jsp:include>
-            <a href="ProductoControlador?action=add" class="btn btn-primary btn-sm mt-3"><i class="fa-solid fa-plus"></i> Nuevo Producto</a>
-
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="my-0">Productos</h1>
+                <a href="ProductoControlador?action=add" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Nuevo Producto</a>
+            </div>
             <table class="table table-striped mt-3">
                 <tr>
                     <th>Id</th>
